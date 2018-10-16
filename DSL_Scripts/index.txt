@@ -1,0 +1,11 @@
+DSL01.groovy : Script to create a simple freestyle job.
+DSL02.groovy : Test git integration.
+DSL03.groovy : Script to build a maven type Java project.
+DSL04.groovy : Parameters testing.
+DSL05.groovy : Script to create a maven job that builds a Java project according to selected tag.
+DSL06.groovy : Email trigger implementation
+DSL07.groovy : Script to create a maven job that performs code stability.
+DSL08.groovy : Script to create a maven job that performs code quality.
+DSL09.groovy : Script to create a maven job that performs code coverage.
+DSL10.groovy : Script to create a maven job that performs war deployment.
+
