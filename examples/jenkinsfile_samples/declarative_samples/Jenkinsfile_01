@@ -1,0 +1,32 @@
+/*
+Tool installation is a tedious process. Imagine if you had dozen of tools in Jenkins, 
+Jenkins will attempt to install the listed tool (if it is not installed yet). By using 
+'tools' directive you can make sure a specific version required for your project is 
+installed.
+*/
+
+pipeline {
+    agent any
+    parameters  {
+		choice(choices: ['US-EAST-1', 'US-WEST-2'], description: 'What AWS region?', name: 'region')
+    }
+    tools {
+        jdk 'jdk7'
+        maven 'maven3'
+    }
+    stages {
+        stage('Test software installation') {
+            steps {
+                sh 'java -version'
+                sh 'which java'
+                sh 'mvn -version'
+                sh 'which mvn'
+            }
+        }
+        stage('Print variable') {
+            steps {
+				echo '${region}'
+            }
+        }
+    }
+}
