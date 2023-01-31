@@ -19,5 +19,5 @@ curl -u "jenkins-user:jenkins-pwd" -H "$crumb" -X POST http://jenkins-ip:8080/jo
 
 ```
 crumb=$(curl -u "jenkins-user:jenkins-pwd" -s 'http://jenkins-ip:8080/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,":",//crumb)')
-curl -u "jenkins-user:jenkins-pwd" -H "$crumb" -X POST  http://jenkins-ip:8080/job/jenkins-job02/buildWithParameters?paramerer01=value01&paramerer02=value02
+curl -u "jenkins-user:jenkins-pwd" -H "$crumb" -X POST  http://jenkins-ip:8080/job/jenkins-job02/buildWithParameters?parameter01=value01&parameter02=value02
 ```
