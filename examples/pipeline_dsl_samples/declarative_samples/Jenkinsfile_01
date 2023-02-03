@@ -1,11 +1,5 @@
-/*
-Tool installation is a tedious process. Imagine if you had dozen of tools in Jenkins, 
-Jenkins will attempt to install the listed tool (if it is not installed yet). By using 
-'tools' directive you can make sure a specific version required for your project is 
-installed.
-*/
-
 pipeline {
+    // Use 'any' to execute the Pipeline, or stage, on any available agent.
     agent any
     parameters  {
 		choice(choices: ['US-EAST-1', 'US-WEST-2'], description: 'What AWS region?', name: 'region')
