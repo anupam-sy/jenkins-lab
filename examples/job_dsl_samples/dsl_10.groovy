@@ -1,5 +1,6 @@
-mavenJob("MVNJOB-CodeQuality") {
-  description("Code Quality job through DSL")
+// Job DSL script to create a maven job that performs code quality.
+mavenJob("mavenjob-codequality") {
+  description("Jenkins job created through Job DSL Script.")
   parameters {
     gitParam('Minor_Tag') {
       type('TAG')

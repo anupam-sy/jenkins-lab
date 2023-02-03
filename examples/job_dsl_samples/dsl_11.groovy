@@ -1,5 +1,6 @@
-mavenJob("MVNJOB-CodeCoverage") {
-  description("Code Coverage job through DSL")
+// Job DSL script to create a maven job that performs code coverage.
+mavenJob("mavenjob-codecoverage") {
+  description("Jenkins job created through Job DSL Script.")
   parameters {
     gitParam('Minor_Tag') {
       type('TAG')

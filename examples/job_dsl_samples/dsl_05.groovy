@@ -1,11 +1,12 @@
-job("DSLJob01") {
-  description("My first job through DSL")
+// Job DSL script to create a freestyle job with post build actions.
+job("generated-job-05") {
+  description("Jenkins job created with build trigger and build steps configuration.")
   steps {
-    shell('echo hello')
-    }
+   shell("echo 'hello world!'")
+  }
   publishers {
     extendedEmail {
-      recipientList('abc@gmail.com')
+      recipientList('xyz@gmail.com')
       defaultSubject('$DEFAULT_SUBJECT')
       defaultContent('$DEFAULT_CONTENT')
       contentType('text/html')

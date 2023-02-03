@@ -1,11 +1,13 @@
-job("DSLJob03") {
-  description("Job created through DSL")
+// Job DSL script to build a maven type Java project.
+job("maven-job-01") {
+  description("Jenkins job created through Job DSL Script.")
   scm {
     git{
       remote {
         url("https://github.com/anupam-sy/MavenProject_01.git")
+        credentials("github-user-authentication")
       }
-      // branch("*/master")
+      branch("*/main")
     }
   }
   steps {

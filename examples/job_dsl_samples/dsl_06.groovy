@@ -1,7 +1,6 @@
-// Seed job to create pipeline type job.
-
-pipelineJob("MavenProject-CI") {
-    displayName("MavenProject-CI")
+// Job DSL script to create a pipeline job.
+pipelineJob("maven-pipeline-job") {
+    displayName("Pipeline job created with scm configuration.")
     definition {
         cpsScm {
             scm {

@@ -1,5 +1,6 @@
-mavenJob("MVNJOB-CodeStability") {
-  description("Code stability job through DSL")
+// Job DSL script to create a maven job that performs code stability.
+mavenJob("mavenjob-codestability") {
+  description("Jenkins job created through Job DSL Script.")
   parameters {
     gitParam('Minor_Tag') {
       type('TAG')

@@ -18,8 +18,13 @@ Below plugins are required to use Job DSL.
 ## Getting Started
 First, start a Jenkins instance with the Job DSL plugin installed. Then create a freestyle project named "seed". Then, Add a "Process Job DSLs" build step and paste the on of the script into the "DSL Script" field. Save the configuration, build the seed job. The seed job will generate the respective jenkins job mentioned in the script.
 
-## References
-Below are the few articles used in writing and collecting information about this ReadME.
+Note: Job DSL version 1.60 introduced Script Security. Execute seed jobs after disabling script security for Job DSL scripts under Configure Global Security settings.
 
+## Write your custom Job DSL
+To write the custom Job DSL script, use the below mentioned wiki to get the required syntaxes.
+- https://jenkinsci.github.io/job-dsl-plugin/
+
+## References
+Below are the few articles used in writing and collecting information about this ReadMe.
 - https://plugins.jenkins.io/job-dsl/
 - https://www.jetbrains.com/mps/concepts/domain-specific-languages/

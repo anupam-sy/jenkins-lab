@@ -1,5 +1,6 @@
-job("DSLJob05") {
-  description("Job created through DSL")
+// Job DSL script to create a maven job that builds a Java project according to selected tag.
+job("maven-job-02") {
+  description("Jenkins job created through Job DSL Script.")
   parameters {
     gitParam('Minor_Tag') {
       type('TAG')

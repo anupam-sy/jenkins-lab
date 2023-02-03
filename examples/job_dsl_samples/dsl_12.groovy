@@ -1,5 +1,6 @@
-mavenJob("MVNJOB-CodeDeploy") {
-  description("Code Deploy job through DSL")
+// Job DSL script to create a maven job that performs war deployment.
+mavenJob("mavenjob-codedeploy") {
+  description("Jenkins job created through Job DSL Script.")
   parameters {
     gitParam('Minor_Tag') {
       type('TAG')
