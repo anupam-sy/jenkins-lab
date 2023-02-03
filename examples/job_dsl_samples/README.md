@@ -21,5 +21,5 @@ First, start a Jenkins instance with the Job DSL plugin installed. Then create a
 ## References
 Below are the few articles used in writing and collecting information about this ReadME.
 
-> https://plugins.jenkins.io/job-dsl/
-> https://www.jetbrains.com/mps/concepts/domain-specific-languages/
+- https://plugins.jenkins.io/job-dsl/
+- https://www.jetbrains.com/mps/concepts/domain-specific-languages/
